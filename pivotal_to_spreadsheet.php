@@ -26,7 +26,8 @@ $name_array = array_column($result, "name", "id");
 
 //Member List
 $curl_member = curl_init();
-curl_setopt($curl_member, CURLOPT_URL, $base_url.'/services/v5/projects/2117522/memberships');
+//メンバー名がIDになっているので、名前で表示できるようにする
+curl_setopt($curl_member, CURLOPT_URL, $base_url.'/services/v5/projects/'.'Your Project ID'.'/memberships');
 curl_setopt($curl_member, CURLOPT_CUSTOMREQUEST, 'GET');
 curl_setopt($curl_member, CURLOPT_HTTPHEADER, $header);
 curl_setopt($curl_member, CURLOPT_SSL_VERIFYPEER, false);
