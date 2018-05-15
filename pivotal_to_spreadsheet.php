@@ -47,7 +47,7 @@ $key_list = array();
 $isFirst = true;
 foreach($ids as $id){
   $curl2 = curl_init();
-  curl_setopt($curl2, CURLOPT_URL, $base_url.'/services/v5/projects/'.$id.'/stories?with_state=accepted');
+  curl_setopt($curl2, CURLOPT_URL, $base_url.'/services/v5/projects/'.$id.'/stories?with_state=accepted&limit=2000');
   curl_setopt($curl2, CURLOPT_CUSTOMREQUEST, 'GET');
   curl_setopt($curl2, CURLOPT_HTTPHEADER, $header);
   curl_setopt($curl2, CURLOPT_SSL_VERIFYPEER, false);
@@ -189,11 +189,12 @@ function expandHomeDirectory($path) {
 // Get the API client and construct the service object.
 $client = getClient();
 $service = new Google_Service_Sheets($client);
-
+//labelカラムがいらないので削除
 $key_list = array_diff($key_list, array('labels'));
 $key_list = array_values($key_list);
 $column_title=array();
 array_push($column_title, $key_list);
+//スプレットシートに合うようにデータの形を整形 & いらないデータを削除
 foreach($result_all as $result_key => $result_value) {
   unset($result_value['labels']);
   $result_all[$result_key] = array_values($result_value);
