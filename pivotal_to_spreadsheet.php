@@ -47,7 +47,7 @@ $key_list = array();
 $isFirst = true;
 foreach($ids as $id){
   $curl2 = curl_init();
-  curl_setopt($curl2, CURLOPT_URL, $base_url.'/services/v5/projects/'.$id.'/stories?with_state=accepted');
+  curl_setopt($curl2, CURLOPT_URL, $base_url.'/services/v5/projects/'.$id.'/stories?with_state=accepted&limit=2000');
   curl_setopt($curl2, CURLOPT_CUSTOMREQUEST, 'GET');
   curl_setopt($curl2, CURLOPT_HTTPHEADER, $header);
   curl_setopt($curl2, CURLOPT_SSL_VERIFYPEER, false);
@@ -58,8 +58,7 @@ foreach($ids as $id){
   $json2 = json_encode($result2);
 
   foreach($result2 as $value){
-    //カラムが足りない場合の処理（ベタ書きなのでなんとかしたい）
-    print_r($value["name"]);
+    //The case of lack value
     if(!(array_key_exists("accepted_at", $value)))
       $value = array_merge($value, array('accepted_at'=>999));
     if(!(array_key_exists("created_at", $value)))
