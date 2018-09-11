@@ -4,7 +4,7 @@
 
 1. [Set up Google Sheet API](https://developers.google.com/sheets/api/quickstart/php)
 2. Go to your pivotal tracker my page and copy API token, and paste in 'PIVOTAL TOKEN'.
-3. Set json file which is made by [1] in your dictionary and write file path at 'Path to Json' in PHP file.
+3. Set json file which is made by [1] in your directory and write file path at 'Path to Json' in PHP file.
 4. install composer by ```brew install composer```
 5. conduct ```composer require google/apiclient:^2.0``` in your developing directory.
 6. make new google spread sheet file and add API mail address as editor.
