@@ -2,10 +2,10 @@
 
 ### This is code that get data from [Pivotal Tracker](http://pivotaltracker.com/) and write in Google Sprtead Sheet by PHP. Procedure is below.
 
-1. [Set up Google Sheet API 1](https://developers.google.com/sheets/api/quickstart/php)
+1. [Set up Google Sheet API (1)](https://developers.google.com/sheets/api/quickstart/php)
 2. install composer by ```brew install composer```
 3. conduct ```composer require google/apiclient:^2.0``` in your working directory.
-4. [Set up Google Sheets API2](http://www.sharkpp.net/blog/2016/09/22/how-to-use-google-spreadsheets-api-for-php.html)
+4. [Set up Google Sheets API (2)](http://www.sharkpp.net/blog/2016/09/22/how-to-use-google-spreadsheets-api-for-php.html)
   (1) Make project
   (2) Enable google sheets API
   (3) Make new credential
