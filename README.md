@@ -14,11 +14,11 @@
      - Service account name → You can decide  
      - Role → `app engine service admin`  
      - key type → `Json`  
-5. Set json file which is created by [4] in your directory and write file path at `Path to Json` in PHP file (Picture2).
-6. Go to your pivotal tracker my page and copy API token, and paste in `PIVOTAL TOKEN` (Picture1).
+5. Set json file which is created by [4] in your directory and write file path at `Path to Json` in PHP file (Picture1).
+6. Go to your pivotal tracker my page and copy API token, and paste in `PIVOTAL TOKEN` (Picture2).
 7. make new google spread sheet file and add API mail address as editor.
 [Reference](https://www.fillup.io/post/read-and-write-google-sheets-from-php/)
-8. write last last of the spread sheet URL in `SPREAD SHEET ID` (Picture1)
+8. write last last of the spread sheet URL in `SPREAD SHEET ID` (Picture2)
 9. conduct ```php pivotal_to_spreadsheet.php```
 
 ### Picture1
