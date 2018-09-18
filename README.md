@@ -22,7 +22,7 @@
 9. conduct ```php pivotal_to_spreadsheet.php```
 
 ### Picture1
-![token and spread sheet id](https://github.com/ShotaOnishi/Pivotal-to-GoogleSpreadSheet/blob/dev_0911/picture/place_of_token_and_id.png?raw=true "pic1")
+![token and spread sheet id](https://github.com/ShotaOnishi/Pivotal-to-GoogleSpreadSheet/blob/dev_0911/picture/place_of%20_json_path.png?raw=true "pic1")
 
 ### Picture2
-![Path to Json](https://github.com/ShotaOnishi/Pivotal-to-GoogleSpreadSheet/blob/dev_0911/picture/place_of%20_json_path.png?raw=true "pic2")
+![Path to Json](https://github.com/ShotaOnishi/Pivotal-to-GoogleSpreadSheet/blob/dev_0911/picture/place_of_token_and_id.png?raw=true "pic2")
