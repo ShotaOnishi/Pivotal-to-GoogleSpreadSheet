@@ -11,9 +11,9 @@
   (3) Make new credential  
      - Credentials type → `service account key`  
      - Service account → `new service account`  
-      - Service account name → You can decide  
-      - Role → `app engine service admin`  
-      - key type → `Json`  
+        - Service account name → You can decide  
+        - Role → `app engine service admin`  
+        - key type → `Json`  
 5. Set json file which is created by [4] in your directory and write file path at `Path to Json` in PHP file (Picture1).
 6. Go to your pivotal tracker my page and copy API token, and paste in `PIVOTAL TOKEN` (Picture2).
 7. make new google spread sheet file and add API mail address as editor.
