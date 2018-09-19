@@ -14,7 +14,9 @@
         - Service account name → You can decide  
         - Role → `app engine service admin`  
         - key type → `Json`  
+
 [Reference](http://www.sharkpp.net/blog/2016/09/22/how-to-use-google-spreadsheets-api-for-php.html)  
+
 6. Set json file which is created by [4] in your directory and write file path at `Path to Json` in PHP file (Picture1).
 7. Go to your pivotal tracker my page and copy API token, and paste in `PIVOTAL TOKEN` (Picture2).
 8. make new google spread sheet file and add API mail address as editor.
