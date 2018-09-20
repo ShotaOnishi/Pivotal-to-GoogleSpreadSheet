@@ -122,7 +122,7 @@ curl_close($result);
 //Update Google Spread Sheet
 define('APPLICATION_NAME', 'Google Sheets API PHP Quickstart');
 define('CREDENTIALS_PATH', '~/.credentials/sheets.googleapis.com-php-quickstart.json');
-define('CLIENT_SECRET_PATH', __DIR__ . 'Path to Json');
+define('CLIENT_SECRET_PATH', __DIR__ . 'credentials.json');
 define('SCOPES', implode(' ', array(
   Google_Service_Sheets::SPREADSHEETS)
 ));
